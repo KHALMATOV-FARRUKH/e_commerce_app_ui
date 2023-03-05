@@ -1,6 +1,8 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:e_commerce_app_ui/widgets/categories_widget.dart';
 import 'package:e_commerce_app_ui/widgets/home_app_bar.dart';
 import 'package:e_commerce_app_ui/widgets/items_widget.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -90,6 +92,17 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+        ],
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.transparent,
+        onTap: (index) {},
+        height: 65,
+        color: Color(0xFF4C53A5),
+        items: [
+          Icon(Icons.home, size: 30, color: Colors.white),
+          Icon(CupertinoIcons.cart_fill, size: 30, color: Colors.white),
+          Icon(Icons.list, size: 30, color: Colors.white),
         ],
       ),
     );
